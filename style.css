@@ -155,3 +155,73 @@ html {
   margin-top: 25px;
   color: #bbb;
 }
+
+/* ===================== Education ===================== */
+#skills {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+}
+
+#skills h2 {
+    color: #DC143C;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.skills-group {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+.skill-group h3 {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skill-card {
+  background: #222;
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  width: 140px;
+  height: 60px;
+  display: flex; 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+   box-shadow: 
+    0 4px 12px rgba(0,0,0,0.3),
+    0 8px 24px rgba(0,0,0,0.25); 
+  font-size: 0.85rem;
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card i,
+.skill-card img {
+  font-size: 28px;
+  width: 28px;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.devicon-apachekafka-plain {
+  font-size: 40px;
+  color: #ffffff;
+}
