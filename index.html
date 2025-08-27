@@ -1,18 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toni Ivanov - Portfolio</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, I’m Toni 👋</h1>
-  <p>Software Engineer | Java | Spring Boot | Flutter</p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="https://github.com/tony8864/alphaCompiler">Alpha Compiler</a></li>
-    <li><a href="https://github.com/tony8864/yeti-framework">YETI Framework</a></li>
-    <li><a href="https://github.com/tony8864/chatapp">Real-Time Chat App</a></li>
-  </ul>
+  <!-- Header / Navbar -->
+  <header>
+    <h1>Toni Ivanov</h1>
+    <nav id="navbar">
+      <a href="#about">Introduction</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- Sections -->
+  <section id="about">
+    <h2>Introduction</h2>
+    <p>
+        I'm a software engineer who enjoys building things, both at work and in my free time. 
+        I care about clean design in programming and like creating solutions that are simple, efficient, and practical.
+        Outside of coding, I'm really into music — I've put together over 125 playlists on Spotify, and my friends call me “Shazam” for always knowing the right track.
+    </p>
+    <!-- Education subsection -->
+    <div id="education">
+    <h3>Education</h3>
+    <div class="edu-card">
+        <h4>University of Crete</h4>
+        <p>Bachelor of Computer Science (2018 – 2023)</p>
+        <p>Thesis: Prediction of Personality Traits from Speech Signals using Machine Learning</p>
+        <p><strong>GPA:</strong> 7.8 / 10</p>
+    </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>List of my skills here...</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Some of my projects...</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <p>My certifications...</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:tonyivanov88@gmail.com">tonyivanov88@gmail.com</a></p>
+  </section>
+
+  <script>
+    function toggleMenu() {
+        document.getElementById("navbar").classList.toggle("show");
+    }
+    document.querySelectorAll('#navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+            document.getElementById("navbar").classList.remove("show");
+        });
+    });
+
+  </script>
 </body>
 </html>
