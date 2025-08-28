@@ -1,13 +1,13 @@
 /* Reset styles (basic clean slate) */
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #fffaf0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf0;
 }
 
 /* ===================== Navbar ===================== */
 h1 {
-  color: #DC143C;
+    color: #DC143C;
 }
 
 header {
@@ -49,7 +49,7 @@ section {
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* menu toggle*/
@@ -64,30 +64,30 @@ html {
 
 /* ===================== About ===================== */
 @media (max-width: 1024px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    background-color: #222;
-    position: absolute;
-    top: 120px;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-  }
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
 
-  nav a {
-    margin: 10px 0;
-    color: #ccc;
-    text-align: left;
-  }
+    nav a {
+        margin: 10px 0;
+        color: #ccc;
+        text-align: left;
+    }
 
-  .menu-toggle {
-    display: block;
-  }
+    .menu-toggle {
+        display: block;
+    }
 
-  nav.show {
-    display: flex;
-  }
+    nav.show {
+        display: flex;
+    }
 }
 
 #about {
@@ -132,28 +132,28 @@ html {
     padding: 20px;
     max-width: 750px;
     margin: 0 auto;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.6), 
-              0 12px 48px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6),
+        0 12px 48px rgba(0, 0, 0, 0.4);
     text-align: left;
 }
 
 .edu-card h4 {
-  margin-top: 0;
-  margin-bottom: 4px;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600; 
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 #education .edu-card p {
-  font-size: 1rem;
-  margin: 3px 0;
-  color: #ddd;   
+    font-size: 1rem;
+    margin: 3px 0;
+    color: #ddd;
 }
 
 #education .edu-card p:last-child {
-  margin-top: 25px;
-  color: #bbb;
+    margin-top: 25px;
+    color: #bbb;
 }
 
 /* ===================== Education ===================== */
@@ -171,16 +171,16 @@ html {
     margin-bottom: 20px;
 }
 
-.skills-group {
+.skill-group {
     max-width: 900px;
     margin: 0 auto 50px auto;
 }
 
 .skill-group h3 {
-  font-size: 1.5rem;
-  color: #333;
-  text-align: center; 
-  margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .skill-cards {
@@ -191,37 +191,115 @@ html {
 }
 
 .skill-card {
-  background: #222;
-  color: #fff;
-  padding: 16px;
-  border-radius: 8px;
-  width: 140px;
-  height: 60px;
-  display: flex; 
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-   box-shadow: 
-    0 4px 12px rgba(0,0,0,0.3),
-    0 8px 24px rgba(0,0,0,0.25); 
-  font-size: 0.85rem;
-  transition: transform 0.2s;
+    background: #222;
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    width: 140px;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.3),
+        0 8px 24px rgba(0, 0, 0, 0.25);
+    font-size: 0.85rem;
+    transition: transform 0.2s;
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .skill-card i,
 .skill-card img {
-  font-size: 28px;
-  width: 28px;
-  height: auto;
-  margin-bottom: 6px;
+    font-size: 28px;
+    width: 28px;
+    height: auto;
+    margin-bottom: 6px;
 }
 
 .devicon-apachekafka-plain {
-  font-size: 40px;
-  color: #ffffff;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+/* ===================== Projects ===================== */
+#projects {
+    min-height: 100vh;
+    padding-top: 140px;
+    text-align: center;
+}
+
+#projects h2 {
+    color: #DC143C;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 320px;
+    max-width: 360px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.project-card p {
+    color: #ddd;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.project-card em {
+    display: block;
+    margin-top: 10px;
+    color: #DC143C;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.project-card a {
+    display: inline-block;
+    color: #DC143C;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
 }
