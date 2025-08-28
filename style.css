@@ -355,3 +355,41 @@ html {
     gap: 40px;
     width: 100%;
 }
+/* ===================== Contact ===================== */
+#contact {
+  min-height: 60vh;
+  padding-top: 140px;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #DC143C;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact-links a {
+  color: #DC143C;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
