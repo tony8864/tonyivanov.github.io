@@ -303,3 +303,55 @@ html {
 .project-card a:hover {
     text-decoration: underline;
 }
+
+/* ===================== Certifications ===================== */
+#certifications {
+    min-height: 70vh;
+    padding-top: 140px;
+    background: #fffaf0;
+    text-align: center;
+}
+
+#certifications h2 {
+    color: #DC143C;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.cert-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.cert-item {
+    max-width: 250px;
+    text-align: center;
+}
+
+.cert-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.cert-item img {
+    width: 160px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.cert-item img:hover {
+    transform: scale(1.1);
+}
+
+.cert-logos {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+}
