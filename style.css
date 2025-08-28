@@ -355,41 +355,141 @@ html {
     gap: 40px;
     width: 100%;
 }
+
 /* ===================== Contact ===================== */
 #contact {
-  min-height: 60vh;
-  padding-top: 140px;
-  background: #222;
-  color: #fff;
-  text-align: center;
+    min-height: 60vh;
+    padding-top: 140px;
+    background: #222;
+    color: #fff;
+    text-align: center;
 }
 
 #contact h2 {
-  color: #DC143C;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+    color: #DC143C;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 #contact p {
-  color: #ccc;
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .contact-links {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 }
 
 .contact-links a {
-  color: #DC143C;
-  font-size: 1.2rem;
-  text-decoration: none;
-  font-weight: bold;
+    color: #DC143C;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .contact-links a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+/* ===================== Experience Timeline ===================== */
+#experience {
+    min-height: 100vh;
+    padding-top: 140px;
+}
+
+#experience h2 {
+    text-align: center;
+    color: #DC143C;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.exp-card {
+    background: #222;
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin-left: 50px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.exp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.exp-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.exp-card p {
+    color: #ccc;
+    margin: 0 0 12px 0;
+    font-size: 0.95rem;
+}
+
+.exp-card ul {
+    padding-left: 20px;
+    margin: 0;
+    color: #ddd;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.exp-card li {
+    margin-bottom: 6px;
+}
+
+.timeline {
+    position: relative;
+    margin-left: 30px;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #333;
+}
+
+.timeline::before {
+    top: 20px;
+    bottom: 20px;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 20px;
+    left: -41.5px;
+    width: 20px;
+    height: 20px;
+    background-color: #DC143C;
+    border-radius: 50%;
+    border: 3px solid #222;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item:nth-child(1) p {
+  color: #DC143C;
+}
+
+.timeline-item:nth-child(2) p {
+  color: #DC143C;
 }
